@@ -112,3 +112,12 @@ body,
 [class*="Video"] {
   background-color: transparent !important;
 }
+/* Görüşme gridini saran üst katmanları şeffaf yap */
+div:has(> [class*="videoGrid_"]),
+div:has(> div > [class*="videoGrid_"]),
+div:has(> div > div > [class*="videoGrid_"]),
+div:has(> div > div > div > [class*="videoGrid_"]),
+div:has(> div > div > div > div > [class*="videoGrid_"]) {
+  background: transparent !important;
+  background-color: transparent !important;
+}
