@@ -5,4 +5,24 @@
  * @version 1.0.0
  */
 
-/* buradan sonra tema kodların */
+:root {
+  --bg-image: url("https://raw.githubusercontent.com/Lonesy1919/isagiyoichi/refs/heads/main/arkaplan.png");
+}
+
+body,
+.appMount__160d7 {
+  background-image: var(--bg-image) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Discord'un kendi arka planlarını şeffaflaştır ki resim görünsün */
+.theme-dark {
+  --background-primary: rgba(0, 0, 0, 0.55) !important;
+  --background-secondary: rgba(0, 0, 0, 0.6) !important;
+  --background-secondary-alt: rgba(0, 0, 0, 0.65) !important;
+  --background-tertiary: rgba(0, 0, 0, 0.7) !important;
+  --background-floating: rgba(0, 0, 0, 0.8) !important;
+}
