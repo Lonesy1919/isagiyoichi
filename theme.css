@@ -2,15 +2,15 @@
  * @name İsagi Yoichi
  * @author Lonesy
  * @description bluelock
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 :root {
   --bg-image: url("https://raw.githubusercontent.com/Lonesy1919/isagiyoichi/refs/heads/main/isagi.jpg");
-  --overlay: rgba(0, 0, 0, 0.55);
+  --overlay: rgba(0, 0, 0, 0.35);
 }
 
-/* Arka plan resmi (üstüne koyu katman, yazılar okunsun diye) */
+/* Arka plan resmi */
 html,
 body,
 #app-mount {
@@ -22,29 +22,44 @@ body,
   background-attachment: fixed !important;
 }
 
-/* Tüm temalarda (dark, darker, midnight) Discord'un katmanlarını şeffaflaştır */
+/* Discord'un ana katmanlarını şeffaf yap (sadece renk, resimlere dokunmaz) */
+[class*="app_"],
+[class*="bg_"],
+[class*="layers_"],
+[class*="layer_"],
+[class*="base_"],
+[class*="content_"],
+[class*="chat_"],
+[class*="page_"],
+[class*="sidebar_"],
+[class*="privateChannels_"],
+[class*="guilds_"],
+[class*="nowPlayingColumn"],
+[class*="peopleColumn"] {
+  background-color: transparent !important;
+}
+
+/* Renk değişkenleri */
 .theme-dark,
 .theme-darker,
-.theme-midnight {
-  /* Eski değişkenler */
+.theme-midnight,
+.visual-refresh {
   --background-primary: transparent !important;
-  --background-secondary: rgba(0, 0, 0, 0.45) !important;
-  --background-secondary-alt: rgba(0, 0, 0, 0.5) !important;
-  --background-tertiary: rgba(0, 0, 0, 0.55) !important;
-  --background-floating: rgba(0, 0, 0, 0.85) !important;
+  --background-secondary: rgba(0, 0, 0, 0.3) !important;
+  --background-secondary-alt: rgba(0, 0, 0, 0.35) !important;
+  --background-tertiary: rgba(0, 0, 0, 0.4) !important;
+  --background-floating: rgba(10, 10, 15, 0.92) !important;
 
-  /* Yeni değişkenler */
   --bg-base-primary: transparent !important;
-  --bg-base-secondary: rgba(0, 0, 0, 0.45) !important;
-  --bg-base-tertiary: rgba(0, 0, 0, 0.55) !important;
-  --background-base-low: rgba(0, 0, 0, 0.45) !important;
-  --background-base-lower: rgba(0, 0, 0, 0.55) !important;
-  --background-base-lowest: rgba(0, 0, 0, 0.6) !important;
-  --background-surface-high: rgba(0, 0, 0, 0.5) !important;
+  --bg-base-secondary: rgba(0, 0, 0, 0.3) !important;
+  --bg-base-tertiary: rgba(0, 0, 0, 0.4) !important;
+  --background-base-low: rgba(0, 0, 0, 0.3) !important;
+  --background-base-lower: rgba(0, 0, 0, 0.4) !important;
+  --background-base-lowest: rgba(0, 0, 0, 0.45) !important;
+  --background-surface-high: rgba(0, 0, 0, 0.35) !important;
   --chat-background-default: transparent !important;
-  --channeltextarea-background: rgba(0, 0, 0, 0.5) !important;
+  --channeltextarea-background: rgba(0, 0, 0, 0.4) !important;
 
-  /* Mavi vurgu rengi (istemezsen bu iki satırı sil) */
   --brand-500: #3b6cff !important;
   --brand-360: #3b6cff !important;
 }
