@@ -1,0 +1,84 @@
+/**
+ * @name Bero
+ * @author Lonesy
+ * @description pink and warm
+ * @version 1.0.0
+ */
+
+:root {
+  --bg-image: url("https://raw.githubusercontent.com/Lonesy1919/isagiyoichi/refs/heads/main/bero.jpg");
+  --overlay: rgba(0, 0, 0, 0.45);
+}
+
+/* Arka plan */
+html,
+body,
+#app-mount {
+  background-color: #000 !important;
+  background-image: linear-gradient(var(--overlay), var(--overlay)), var(--bg-image) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Ana katmanları şeffaf yap */
+[class*="themed_"],
+[class*="tabBody_"],
+[class*="peopleColumn_"],
+[class*="peopleList_"],
+[class*="nowPlayingColumn_"],
+[class*="searchBar_"],
+[class*="scrollerBase_"],
+[class*="app_"],
+[class*="bg_"],
+[class*="layers_"],
+[class*="layer_"],
+[class*="base_"],
+[class*="content_"],
+[class*="chat_"],
+[class*="page_"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Renk değişkenleri */
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh {
+  --background-primary: transparent !important;
+  --background-secondary: rgba(25, 10, 16, 0.55) !important;
+  --background-secondary-alt: rgba(25, 10, 16, 0.6) !important;
+  --background-tertiary: rgba(25, 10, 16, 0.65) !important;
+  --background-floating: rgba(25, 12, 18, 0.94) !important;
+
+  --bg-base-primary: transparent !important;
+  --bg-base-secondary: rgba(25, 10, 16, 0.55) !important;
+  --bg-base-tertiary: rgba(25, 10, 16, 0.65) !important;
+  --background-base-low: rgba(25, 10, 16, 0.55) !important;
+  --background-base-lower: rgba(25, 10, 16, 0.65) !important;
+  --background-base-lowest: rgba(25, 10, 16, 0.7) !important;
+  --background-surface-high: rgba(25, 10, 16, 0.6) !important;
+  --chat-background-default: transparent !important;
+  --channeltextarea-background: rgba(25, 10, 16, 0.6) !important;
+
+  /* Pembe vurgu */
+  --brand-500: #ff5c9d !important;
+  --brand-360: #ff5c9d !important;
+}
+
+/* Sol paneller */
+[class*="guilds_"],
+[class*="sidebar_"],
+[class*="privateChannels_"],
+[class*="panels_"] {
+  background-color: rgba(25, 10, 16, 0.65) !important;
+}
+
+/* Yazı okunurluğu */
+[class*="messageContent_"],
+[class*="username_"],
+[class*="name_"] {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
