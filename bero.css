@@ -82,3 +82,27 @@ body,
 [class*="name_"] {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
+/* Sesli/görüntülü görüşme ekranı arka planı */
+[class*="callContainer_"],
+[class*="callContent_"],
+[class*="videoGrid_"],
+[class*="gridContainer_"],
+[class*="wrapper_"][class*="call"],
+[class*="voiceCallWrapper_"],
+[class*="mainContent_"],
+[class*="noChat_"],
+[class*="chatTarget_"],
+[class*="root_"][class*="video"],
+[class*="videoWrapper_"],
+[class*="callControls_"],
+[class*="channelCall"],
+[class*="rtcConnection"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Üstteki başlık şeridi ve alttaki kontrol çubuğu hafif koyu kalsın */
+[class*="callHeader_"],
+[class*="bottomControls_"] {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+}
