@@ -106,3 +106,9 @@ body,
 [class*="bottomControls_"] {
   background-color: rgba(0, 0, 0, 0.35) !important;
 }
+[class*="call"],
+[class*="Call"],
+[class*="video"],
+[class*="Video"] {
+  background-color: transparent !important;
+}
